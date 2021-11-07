@@ -1,0 +1,11 @@
+
+{% block content %}
+    <h2>High School</h2>
+    <ul>
+        {% for class in object_list %}
+            <h3><li>{{ class.name }}</li></h3>
+            <li>{{class.branches}}</li>
+            <li>{{class.teachers}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
